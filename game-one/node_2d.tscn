@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dup83y3f4vsxw"]
+
+[ext_resource type="Script" uid="uid://cce0xslvn0cco" path="res://character-movement.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://b81t2strgoheh" path="res://icon.svg" id="2_epypp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_epypp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
